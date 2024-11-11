@@ -86,7 +86,7 @@ DEFINE BUTTON BUTTON-1
 /* ************************  Frame Definitions  *********************** */
 
 DEFINE FRAME fMain
-     BUTTON-1 AT ROW 1.48 COL 73 WIDGET-ID 2
+     BUTTON-1 AT ROW 1.48 COL 111 WIDGET-ID 2
     WITH 1 DOWN NO-BOX KEEP-TAB-ORDER OVERLAY 
          SIDE-LABELS NO-UNDERLINE THREE-D 
          AT COLUMN 1 ROW 1
