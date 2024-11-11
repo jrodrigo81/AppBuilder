@@ -196,7 +196,7 @@ ON CHOOSE OF BUTTON-1 IN FRAME fMain /* MESSAGE */
         FOR EACH Employee NO-LOCK:
             icount = icount + 1.
         END.    
-        MESSAGE "Número de Empleados es " + STRING(icount).
+        MESSAGE "Total de Empleados en el sistema es " + STRING(icount).
     END.
 
 /* _UIB-CODE-BLOCK-END */
