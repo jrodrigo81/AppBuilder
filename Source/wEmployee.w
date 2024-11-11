@@ -86,7 +86,7 @@ DEFINE BUTTON BUTTON-1
 /* ************************  Frame Definitions  *********************** */
 
 DEFINE FRAME fMain
-     BUTTON-1 AT ROW 1.48 COL 111 WIDGET-ID 2
+     BUTTON-1 AT ROW 1.48 COL 93 WIDGET-ID 2
     WITH 1 DOWN NO-BOX KEEP-TAB-ORDER OVERLAY 
          SIDE-LABELS NO-UNDERLINE THREE-D 
          AT COLUMN 1 ROW 1
@@ -117,14 +117,14 @@ IF SESSION:DISPLAY-TYPE = "GUI":U THEN
          MAX-WIDTH          = 180.2
          VIRTUAL-HEIGHT     = 28.81
          VIRTUAL-WIDTH      = 180.2
-         RESIZE             = no
-         SCROLL-BARS        = no
-         STATUS-AREA        = no
+         RESIZE             = NO
+         SCROLL-BARS        = NO
+         STATUS-AREA        = NO
          BGCOLOR            = ?
          FGCOLOR            = ?
-         THREE-D            = yes
-         MESSAGE-AREA       = no
-         SENSITIVE          = yes.
+         THREE-D            = YES
+         MESSAGE-AREA       = NO
+         SENSITIVE          = YES.
 ELSE {&WINDOW-NAME} = CURRENT-WINDOW.
 /* END WINDOW DEFINITION                                                */
 &ANALYZE-RESUME
@@ -148,7 +148,7 @@ ELSE {&WINDOW-NAME} = CURRENT-WINDOW.
 /* SETTINGS FOR FRAME fMain
    FRAME-NAME                                                           */
 IF SESSION:DISPLAY-TYPE = "GUI":U AND VALID-HANDLE(wWin)
-THEN wWin:HIDDEN = yes.
+THEN wWin:HIDDEN = YES.
 
 /* _RUN-TIME-ATTRIBUTES-END */
 &ANALYZE-RESUME
@@ -196,7 +196,7 @@ DO:
         FOR EACH Employee NO-LOCK:
             icount = icount + 1.
         END.    
-        MESSAGE "Total de Empleados en el sistema es " + STRING(icount).
+        MESSAGE "Total de Empleados *** es " + STRING(icount).
     END.
 
 /* _UIB-CODE-BLOCK-END */
